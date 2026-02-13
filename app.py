@@ -34,7 +34,7 @@ def summarize_video():
 
     try:
         # 1. Youtube Video စာသားများကို ဆွဲထုတ်ခြင်း
-        transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
+        transcript_list = youtubetranscriptapi.get_transcript(video_id)
         transcript_text = " ".join([i['text'] for i in transcript_list])
 
         # 2. Gemini ကို ပို့မည့် Prompt ပြင်ဆင်ခြင်း
